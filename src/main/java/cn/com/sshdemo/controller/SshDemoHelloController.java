@@ -1,7 +1,7 @@
 package cn.com.sshdemo.controller;
 
 import cn.com.sshdemo.domain.User;
-import cn.com.sshdemo.service.SSHDemoUserService;
+import cn.com.sshdemo.service.SshDemoUserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -14,15 +14,15 @@ import java.util.List;
  * @Description: 框架测试hello Controller
  */
 @Controller
-public class SSHDemoHelloController {
+public class SshDemoHelloController {
     @Resource
-    private SSHDemoUserService userService;
+    private SshDemoUserService userService;
 
     @RequestMapping("/hello")
     public String test() throws Exception {
         try {
             List<User> userList = userService.getUser();
-             System.out.println(userList.size());
+            System.out.println(userList.size());
         } catch (Exception e) {
             e.printStackTrace();
         }

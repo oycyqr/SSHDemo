@@ -10,5 +10,5 @@ import org.springframework.stereotype.Component;
  * @Description:
  */
 @Component
-public class SSHDemoUserDao<T extends User> extends BaseDaoImpl {
+public class SshDemoUserDao<T extends User> extends BaseDaoImpl {
 }

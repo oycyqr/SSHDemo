@@ -5,19 +5,19 @@ package cn.com.sshdemo.exception;
  * @Date: 2019-04-07 16:34
  * @Description: dao自定义异常类
  */
-public class SSHDemoDaoException extends Exception{
+public class SshDemoDaoException extends Exception{
 
 	private static final long serialVersionUID = -3247597564472350006L;
 
-	public SSHDemoDaoException(String message, Throwable cause) {
+	public SshDemoDaoException(String message, Throwable cause) {
 		super(message, cause);
 	}
 
-	public SSHDemoDaoException(String message) {
+	public SshDemoDaoException(String message) {
 		super(message);
 	}
 
-	public SSHDemoDaoException(Throwable cause) {
+	public SshDemoDaoException(Throwable cause) {
 		super(cause);
 	}
 

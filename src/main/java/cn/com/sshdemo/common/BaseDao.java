@@ -19,7 +19,6 @@ import java.util.Map;
  */
 public interface BaseDao {
 
-
     SessionFactory getSessionFactory();
 
     /**
