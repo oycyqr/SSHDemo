@@ -21,6 +21,7 @@ public class SshDemoHelloController {
     @RequestMapping("/hello")
     public String test() throws Exception {
         try {
+             User  user  = userService.getUserById(1);
             List<User> userList = userService.getUser();
             System.out.println(userList.size());
         } catch (Exception e) {

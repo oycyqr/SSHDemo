@@ -1,24 +1,22 @@
 package cn.com.sshdemo.domain;
 
+
+import lombok.Data;
+
+import javax.persistence.*;
+import java.io.Serializable;
+
 /**
  * @Author: oyc
  * @Date: 2019-04-07 16:25
  * @Description:
  */
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-import lombok.Data;
-
-@Table(name="user")
+@Table(name = "user")
 @Entity
 @Data
-public class User {
+public class User implements Serializable {
 
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private Integer id;
     private String username;

@@ -12,4 +12,5 @@ import java.util.List;
  */
 public interface SshDemoUserService {
     List<User> getUser() throws SshDemoServiceException;
+    User getUserById(Integer id) throws SshDemoServiceException;
 }

@@ -21,6 +21,11 @@ public class SshDemoUserServiceImpl implements SshDemoUserService {
 
     @Override
     public List<User> getUser() throws SshDemoServiceException {
-        return userDao.findAll("User");
+        return userDao.loadAll();
+    }
+
+    @Override
+    public User getUserById(Integer id) throws SshDemoServiceException {
+        return (User)userDao.getById(id);
     }
 }
