@@ -12,8 +12,6 @@ import java.util.List;
  * @Date: 2019-04-07 19:56
  * @Description: BaseDao中主要实现和数据库相关的操作逻辑, 不涉及和视图层或控制层的一些操作;
  * 其它dao可以继承此dao然后扩展;
- * 1.get时主要返回单个对象;
- * 2.find使用的hql语句进行操作,主要返回list;
  */
 public interface BaseDao<T> {
 
